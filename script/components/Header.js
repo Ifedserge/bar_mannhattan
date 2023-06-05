@@ -17,7 +17,7 @@ class Header{
         logoLink.setAttribute('href', '')
 
         const logoImg = document.createElement('img');
-        logoImg.setAttribute('src', '../../img/logo.png');
+        logoImg.setAttribute('src', './img/logo.png');
         logoImg.setAttribute('alt', 'logo');
 
         const block = document.createElement('div');

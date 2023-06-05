@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url(../fonts/ofont.ru_Gotham_Pro.ttf);
+}
+@font-face {
+    font-family: 'Stolzl';
+    src: url(../fonts/ofont.ru_Stolzl.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.app{margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+    background: #210E09;
+
+}
+.header{
+    max-width: 1305px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 36px;
+    padding-bottom: 53px;
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.header__container__block{
+    padding-left: 211px;
+    
+    max-width: 936px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav{
+    max-width: 559px;
+    width: 100%;
+    min-height: 21px;
+    padding-right: 189px;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 21px;
+
+}
+.nav a{
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.nav a:hover{
+    font-weight: bold;
+    color: #D5621D;
+}
+.header__btn{
+    max-width: 188px;
+    width: 100%;
+    height: 51px;
+    box-sizing: border-box;
+    border: 2px solid #D5621D;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+.header__btn span{
+    padding: 15px 30px;
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.header__btn:hover{
+    background-color: #D5621D;
+}
+
+.header__btn:active{
+    background-color: transparent;
+}
+
+.heading{
+    margin: 0 auto;
+    max-width: 623px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading div {
+    background: #FFFFFF;
+    border-radius: 5px;
+    width: 244px;
+    height: 38px;
+}
+.heading p{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #210E09;
+    padding: 10px 17px 7px 17px;
+    
+}
+.heading h3{
+    padding-top: 40px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1280px){
+    .header__container__block{
+        padding-left: 100px;
+    }
+    .nav{
+        padding-right: 120px;
+    }
+}
+@media (max-width: 1152px){
+    .nav {
+        max-width: 400px;
+        padding-right: none;
+    }
+    .nav ul{
+        flex-wrap: wrap;
+    }
+}

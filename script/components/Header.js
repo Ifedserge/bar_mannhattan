@@ -14,7 +14,7 @@ class Header{
         logoBlock.classList.add('header__container__logo');
 
         const logoLink = document.createElement('a');
-        logoLink.setAttribute('href', '')
+        logoLink.setAttribute('href', '#')
 
         const logoImg = document.createElement('img');
         logoImg.setAttribute('src', './img/logo.png');
@@ -27,12 +27,12 @@ class Header{
         nav.classList.add('nav');
         nav.innerHTML = `
             <ul>
-                <li><a link=''>Главная</a></li>
-                <li><a link='#'>Меню</a></li>
-                <li><a link='#'>Афиша</a></li>
-                <li><a link='#'>Сотрудничество</a></li>
-                <li><a link='#'>Галерея</a></li>
-                <li><a link='#'>Новости</a></li>
+                <li><a href='#'>Главная</a></li>
+                <li><a href='#menu'>Меню</a></li>
+                <li><a href='#afisha'>Афиша</a></li>
+                <li><a href='#cooperation'>Сотрудничество</a></li>
+                <li><a href='#gallery'>Галерея</a></li>
+                <li><a href='#news'>Новости</a></li>
             </ul>
         `;
 

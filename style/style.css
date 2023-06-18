@@ -9,6 +9,7 @@
 *{
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 .app{margin: 0 auto;
     max-width: 1920px;
@@ -58,6 +59,7 @@
     line-height: 150%;
     color: #FFFFFF;
     cursor: pointer;
+    text-decoration: none;
 }
 .nav a:hover{
     font-weight: bold;
@@ -94,7 +96,7 @@
 }
 
 .heading{
-    margin: 0 auto;
+    /* margin: 0 auto; */
     max-width: 623px;
     width: 100%;
     display: flex;
@@ -133,6 +135,8 @@
     color: #FFFFFF;
 }
 
+
+
 @media (max-width: 1280px){
     .header__container__block{
         padding-left: 100px;
@@ -148,5 +152,15 @@
     }
     .nav ul{
         flex-wrap: wrap;
+    }
+    .heading div {
+        background: #FFFFFF;
+        border-radius: 5px;
+        width: 244px;
+        height: 38px;
+    }
+    .heading h3{
+        padding-top: 20px;
+        font-size: 3 5px;
     }
 }

@@ -81,8 +81,6 @@
 .copyrigth{
     width: 100%;
     position: relative;
-    
-
 }
 .copyrigth span {
     padding: 30px 0;
@@ -96,4 +94,30 @@
     opacity: 0.5;
     
     
+}
+
+
+@media (max-width: 1280px){
+    .footer__container__content{
+        justify-content: space-around;
+    }
+    .contact_block {
+        padding: 40px;
+    }
+    .map iframe{
+        width: 600px;
+        height: 100%;
+    }
+}
+@media (max-width: 1152px){
+    .footer__container__content{
+        padding-top: 50px;
+    }
+    .contact_block {
+        padding: 32px;
+    }
+   .copyrigth{
+    padding-left: 10px;
+   }
+
 }

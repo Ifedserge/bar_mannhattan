@@ -21,7 +21,7 @@ class Afisha{
             <div class='afisha__container__content'>
                 <ul>
                     <li>
-                        <img src='../../img/afisha/event-image1.png' alt='#'>
+                        <img src='./img/afisha/event-image1.png' alt='#'>
                         <div>
                             <span>17.07.2022 &#9679 19.00</span>
                             <p>рок в манхэттене</p>
@@ -29,7 +29,7 @@ class Afisha{
                         </div>
                     </li>
                     <li>
-                        <img src='../../img/afisha/event-image2.png' alt='#'>
+                        <img src='./img/afisha/event-image2.png' alt='#'>
                         <div>
                             <span>17.07.2022 &#9679 19.00</span>
                             <p>рок в манхэттене</p>
@@ -37,7 +37,7 @@ class Afisha{
                         </div>
                         </li>
                     <li>
-                        <img src='../../img/afisha/event-image3.png' alt='#'>
+                        <img src='./img/afisha/event-image3.png' alt='#'>
                         <div>
                             <span>17.07.2022 &#9679 19.00</span>
                             <p>рок в манхэттене</p>
@@ -45,7 +45,7 @@ class Afisha{
                         </div>
                         </li>
                     <li>
-                        <img src='../../img/afisha/event-image4.png' alt='#'>
+                        <img src='./img/afisha/event-image4.png' alt='#'>
                         <div>
                             <span>17.07.2022 &#9679 19.00</span>
                             <p>рок в манхэттене</p>
@@ -53,7 +53,7 @@ class Afisha{
                         </div>
                         </li>
                     <li>
-                        <img src='../../img/afisha/event-image4.png' alt='#'>
+                        <img src='./img/afisha/event-image4.png' alt='#'>
                         <div>
                             <span>17.07.2022 &#9679 19.00</span>
                             <p>рок в манхэттене</p>
@@ -61,7 +61,7 @@ class Afisha{
                         </div>
                         </li>
                     <li>
-                        <img src='../../img/afisha/event-image1.png' alt='#'>
+                        <img src='./img/afisha/event-image1.png' alt='#'>
                         <div>
                             <span>17.07.2022 &#9679 19.00</span>
                             <p>рок в манхэттене</p>
@@ -69,7 +69,7 @@ class Afisha{
                         </div>
                         </li>
                     <li>
-                        <img src='../../img/afisha/event-image2.png' alt='#'>
+                        <img src='./img/afisha/event-image2.png' alt='#'>
                         <div>
                             <span>17.07.2022 &#9679 19.00</span>
                             <p>рок в манхэттене</p>
@@ -77,7 +77,7 @@ class Afisha{
                         </div>
                         </li>
                     <li>
-                        <img src='../../img/afisha/event-image3.png' alt='#'>
+                        <img src='./img/afisha/event-image3.png' alt='#'>
                         <div>
                             <span>17.07.2022 &#9679 19.00</span>
                             <p>рок в манхэттене</p>
@@ -85,7 +85,7 @@ class Afisha{
                         </div>
                         </li>
                     <li>
-                        <img src='../../img/afisha/event-image1.png' alt='#'>
+                        <img src='./img/afisha/event-image1.png' alt='#'>
                         <div>
                             <span>17.07.2022 &#9679 19.00</span>
                             <p>рок в манхэттене</p>
@@ -93,7 +93,7 @@ class Afisha{
                         </div>
                         </li>
                     <li>
-                        <img src='../../img/afisha/event-image4.png' alt='#'>
+                        <img src='./img/afisha/event-image4.png' alt='#'>
                         <div>
                             <span>17.07.2022 &#9679 19.00</span>
                             <p>рок в манхэттене</p>
@@ -101,7 +101,7 @@ class Afisha{
                         </div>
                         </li>
                     <li>
-                        <img src='../../img/afisha/event-image1.png' alt='#'>
+                        <img src='./img/afisha/event-image1.png' alt='#'>
                         <div>
                             <span>17.07.2022 &#9679 19.00</span>
                             <p>рок в манхэттене</p>
@@ -109,7 +109,7 @@ class Afisha{
                         </div>
                         </li>
                     <li>
-                        <img src='../../img/afisha/event-image2.png' alt='#'>
+                        <img src='./img/afisha/event-image2.png' alt='#'>
                         <div>
                             <span>17.07.2022 &#9679 19.00</span>
                             <p>рок в манхэттене</p>

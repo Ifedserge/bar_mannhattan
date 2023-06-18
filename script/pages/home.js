@@ -29,10 +29,10 @@ class Home {
             <ul class='evnet_content'> 
                 <li>
                     <div>
-                    <img src="../../img/event1.png" alt="#">
-                    <img src="../../img/event2.png" alt="#"> 
-                    <img src="../../img/event3.png" alt="#"> 
-                    <img src="../../img/event4.png" alt="#">
+                    <img src="./img/event1.png" alt="#">
+                    <img src="./img/event2.png" alt="#"> 
+                    <img src="./img/event3.png" alt="#"> 
+                    <img src="./img/event4.png" alt="#">
                     </div>
                 </li>
             </ul>
@@ -50,10 +50,10 @@ class Home {
                 <h3>Кухня</h3>
             </div>
             <div class='kitchen__menu'>
-                <button><img src='../../img/left.png' alt='#'></button>
+                <button><img src='./img/left.png' alt='#'></button>
                 <div class='menu'>
                      <div class='menu_block'>
-                        <img src='../../img/home_menu/menu1.png' alt='#'>
+                        <img src='./img/home_menu/menu1.png' alt='#'>
                         <div class='menu_block_content'>
                             <div class='content_title'>
                                 <h5>Amet donec</h5>
@@ -64,7 +64,7 @@ class Home {
                         </div>
                      </div>
                      <div class='menu_block'>
-                        <img src='../../img/home_menu/menu2.png' alt='#'>
+                        <img src='./img/home_menu/menu2.png' alt='#'>
                         <div class='menu_block_content'>
                             <div class='content_title'>
                                 <h5>Amet donec</h5>
@@ -75,7 +75,7 @@ class Home {
                         </div>
                      </div>
                      <div class='menu_block'>
-                        <img src='../../img/home_menu/menu3.png' alt='#'>
+                        <img src='./img/home_menu/menu3.png' alt='#'>
                         <div class='menu_block_content'>
                             <div class='content_title'>
                                 <h5>Amet donec</h5>
@@ -86,7 +86,7 @@ class Home {
                         </div>
                      </div>
                      <div class='menu_block'>
-                        <img src='../../img/home_menu/menu4.png' alt='#'>
+                        <img src='./img/home_menu/menu4.png' alt='#'>
                         <div class='menu_block_content'>
                             <div class='content_title'>
                                 <h5>Amet donec</h5>
@@ -96,7 +96,7 @@ class Home {
                             <p>Leo in arcu in gravida vivamus scelerisque non. Euismod nec amet amet egestas nisl iaculis.</p>
                         </div>
                      </div><div class='menu_block'>
-                     <img src='../../img/home_menu/menu5.png' alt='#'>
+                     <img src='./img/home_menu/menu5.png' alt='#'>
                      <div class='menu_block_content'>
                          <div class='content_title'>
                              <h5>Amet donec</h5>
@@ -106,7 +106,7 @@ class Home {
                          <p>In mauris, elit nisl sed. Nulla accumsan vestibulum sed velit sagittis quis accumsan.</p>
                      </div>
                   </div><div class='menu_block'>
-                  <img src='../../img/home_menu/menu6.png' alt='#'>
+                  <img src='./img/home_menu/menu6.png' alt='#'>
                   <div class='menu_block_content'>
                       <div class='content_title'>
                           <h5>Amet donec</h5>
@@ -116,7 +116,7 @@ class Home {
                       <p>Duis quisque tristique nulla cursus justo, etiam viverra nulla cras. Consectetur eget augue.</p>
                   </div>
                </div><div class='menu_block'>
-               <img src='../../img/home_menu/menu7.png' alt='#'>
+               <img src='./img/home_menu/menu7.png' alt='#'>
                <div class='menu_block_content'>
                    <div class='content_title'>
                        <h5>Amet donec</h5>
@@ -126,7 +126,7 @@ class Home {
                    <p>In cras pharetra aliquet laoreet. Lectus nisi ante felis quam pharetra in maecenas ut felis.</p>
                </div>
             </div><div class='menu_block'>
-                        <img src='../../img/home_menu/menu8.png' alt='#'>
+                        <img src='./img/home_menu/menu8.png' alt='#'>
                         <div class='menu_block_content'>
                             <div class='content_title'>
                                 <h5>Amet donec</h5>
@@ -138,7 +138,7 @@ class Home {
                      </div>
                 </div>
                 
-                <button><img src='../../img/right.png' alt='#'></button>
+                <button><img src='./img/right.png' alt='#'></button>
             </div>
             <button class='kitchen__button'><a href="#menu">все меню</a></button>
         `;
@@ -161,7 +161,7 @@ class Home {
                     <button><p>подробнее</p></button>
                  </div>
                  <div class='info_img'>
-                    <img src='../../img/info_img.png' alt='#'>
+                    <img src='./img/info_img.png' alt='#'>
                  </div>
                  <div class='info_block'>
                     <div class='info_block_heading heading'>
@@ -192,7 +192,7 @@ class Home {
                 <ul class='rider__block-drop'>
                     <li>
                         <input type='checkbox', name='menu1' id='menu1' checked='checked'>
-                        <label for='menu1'><p>Loudspeakers</p><img src='../../img/up.png' alt='#'></label>
+                        <label for='menu1'><p>Loudspeakers</p><img src='./img/up.png' alt='#'></label>
                         <ul class='drop__content' >
                             <li>Acoustic system BELL Top 600W x 2</li>
                             <li>Acoustic system BELL Mid 600W x 2</li>
@@ -203,7 +203,7 @@ class Home {
                     </li>
                     <li>
                         <input type='checkbox', name='menu2' id='menu2'>
-                        <label for='menu2'><p>Amplifier</p><img src='../../img/up.png' alt='#'></label>
+                        <label for='menu2'><p>Amplifier</p><img src='./img/up.png' alt='#'></label>
                         <ul class='drop__content'>
                             <li>Mackie FRM 1400/li>
                             <li>Crown XLS 400</li>
@@ -213,7 +213,7 @@ class Home {
                     </li>
                 <li>
                     <input type='checkbox', name='menu3' id='menu3' >
-                    <label for='menu3'><p>FOH</p><img src='../../img/up.png' alt='#'></label>
+                    <label for='menu3'><p>FOH</p><img src='./img/up.png' alt='#'></label>
                     <ul class='drop__content'>
                         <li>Mixing console Allen&Heath ZED 24</li>
                         <li>Compressor/Limiter/Gate DBX 166 XL x 1</li>
@@ -225,7 +225,7 @@ class Home {
                 </li>
                 <li>
                     <input type='checkbox', name='menu4' id='menu4'>
-                    <label for='menu4'><p>Backline</p><img src='../../img/up.png' alt='#'></label>
+                    <label for='menu4'><p>Backline</p><img src='./img/up.png' alt='#'></label>
                     <ul class='drop__content'>
                         <li>Guitar combo Peavey ValveKing VK112</li>
                         <li>Guitar combo Laney LV 300 Twin</li>
@@ -238,7 +238,7 @@ class Home {
                 </li>
                 <li>
                 <input type='checkbox', name='menu5' id='menu5' >
-                <label for='menu5'><p>Microphone set</p><img src='../../img/up.png' alt='#'></label>
+                <label for='menu5'><p>Microphone set</p><img src='./img/up.png' alt='#'></label>
                 <ul class='drop__content'>
                     <li>Microphone Shure sm 58 x 3</li>
                     <li>Microphone Shure 58A beta x 1</li>
@@ -250,7 +250,7 @@ class Home {
                 </li>
                 <li>
                 <input type='checkbox', name='menu6' id='menu6' >
-                <label for='menu6'><p>DJ equipment</p><img src='../../img/up.png' alt='#'></label>
+                <label for='menu6'><p>DJ equipment</p><img src='./img/up.png' alt='#'></label>
                 <ul class='drop__content'>
                 <li>Acoustic system BELL Top 600W x 2</li>
                     <li>Pioneer CDJ 350 x 2</li>
@@ -264,23 +264,23 @@ class Home {
                     <h3>Звукорежиссеры клуба МАНХЭТТЕН</h3>
                     <div class='sound-prods'>
                         <div class='sound-prod'>
-                            <img src='../../img/Izotov.png' alt='#'>
+                            <img src='./img/Izotov.png' alt='#'>
                             <p>Изотов Константин</p>
                             <div>
                                 <div>
-                                    <a href='https://vk.com/ikvmusic'><img src='../../img/icon/vk.png' alt='#'></a>
-                                    <a href='#'><img src='../../img/icon/bxl_telegram.png' alt='#'></a>
+                                    <a href='https://vk.com/ikvmusic'><img src='./img/icon/vk.png' alt='#'></a>
+                                    <a href='#'><img src='./img/icon/bxl_telegram.png' alt='#'></a>
                                     
                                 </div>
                             </div>
                         </div>
                         <div class='sound-prod'>
-                            <img src='../../img/Hotov.png' alt='#'>
+                            <img src='./img/Hotov.png' alt='#'>
                             <p>Давид <br>Хозиев</p>
                             <div>
                                 <div>
-                                <a href='https://vk.com/fuck_peas'><img src='../../img/icon/vk.png' alt='#'></a>
-                                <a href='#'><img src='../../img/icon/bxl_telegram.png' alt='#'></a>
+                                <a href='https://vk.com/fuck_peas'><img src='./img/icon/vk.png' alt='#'></a>
+                                <a href='#'><img src='./img/icon/bxl_telegram.png' alt='#'></a>
                                 </div>
                             </div>
                         </div>

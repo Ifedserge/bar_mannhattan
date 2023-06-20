@@ -1,0 +1,26 @@
+.gallery__container-heading {
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.gallery__container-heading p{
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.image{
+    width: 306px;
+    position: relative;
+    overflow: hidden;
+}
+.image div{
+    position: absolute;
+    left: calc(50% - 25px);
+    top: -100px;
+}
+.image:hover .photo{
+    opacity: .3;
+}
+.image:hover div{
+    top: calc(50% - 25px);
+    transition: .4s;
+}

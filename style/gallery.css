@@ -1,3 +1,6 @@
+.gallery{
+    margin-bottom: 150px;
+}
 .gallery__container-heading {
     margin: 0 auto;
     margin-bottom: 100px;
@@ -6,16 +9,25 @@
     background: #FFFFFF;
     border-radius: 5px;
 }
-
+.gallery__container-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1320px;
+    margin: 0 auto;
+}
 .image{
-    width: 306px;
+    /* width: 306px; */
     position: relative;
     overflow: hidden;
+    padding: 12px;
 }
 .image div{
     position: absolute;
     left: calc(50% - 25px);
     top: -100px;
+}
+.image .photo{
+    width: 306px;
 }
 .image:hover .photo{
     opacity: .3;

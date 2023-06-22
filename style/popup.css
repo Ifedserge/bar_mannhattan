@@ -36,6 +36,7 @@
     cursor: pointer;
     transition: .3s;
     background: #fff;
+    z-index: 12;
 }
 .popup__close:hover{
     opacity: 1;

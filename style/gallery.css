@@ -12,7 +12,9 @@
 .gallery__container-content{
     display: flex;
     flex-wrap: wrap;
-    width: 1320px;
+    justify-content: center;
+    max-width: 1320px;
+    width: 100%;
     margin: 0 auto;
 }
 .image{
@@ -35,4 +37,32 @@
 .image:hover div{
     top: calc(50% - 25px);
     transition: .4s;
+}
+
+
+@media (max-width: 1280px){
+    .gallery__container-heading{
+        margin-bottom: 60px;
+    }
+   
+    .gallery__container-content .image{
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 780px){
+    .image .photo{
+        width: 240px;
+    }
+}
+@media (max-width: 540px){
+    .image .photo{
+        width: 210px;
+    }
+}
+@media (max-width: 480px){
+    .image .photo{
+        width: 150px;
+    }
 }

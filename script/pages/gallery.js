@@ -252,14 +252,15 @@ class Gallery {
                 img.setAttribute('id', id);
                 content = img;
             }
-            console.log(elem);
+            // console.log(elem);
             show(content);
          }
         let imgArray = [];
-
+        
         [...elems].forEach(elem => {
             elem.addEventListener('click', popUpHandler);
             imgArray.push(elem.children[0])
+           
         });
     }
     

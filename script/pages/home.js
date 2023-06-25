@@ -1,7 +1,9 @@
+import { eventWindow } from '../components/event.js'
 class Home {
     constructor(){
         this.element = null;
         this.init = this.init.bind(this);
+        this.event = null;
     }
     async create(){
         this.element = document.createElement('div');
@@ -18,20 +20,30 @@ class Home {
             <h1>True. Fontanka. Underground.</h1>
         `;
         
-        const event = document.createElement('div');
-        event.classList.add('home__container_event');
+        this.event = document.createElement('div');
+        this.event.classList.add('home__container_event');
 
-        event.innerHTML = `
+       
+        
+        this.event.innerHTML = `
             <ul class='event_btns'>
-                <li class='btn active'><span>Ближайшие</span> </li>
-                <li class='btn'><span>Скоро</span></li>
+                <li class='btn active'>Ближайшие</li>
+                <li class='btn'>Скоро</li>
             </ul>
-            <ul class='evnet_content'> 
-                <li>
+            <ul class='evnet_contents'> 
+                <li class='event_content active'>
                     <div>
                     <img src="./img/event1.png" alt="#">
                     <img src="./img/event2.png" alt="#"> 
                     <img src="./img/event3.png" alt="#"> 
+                    <img src="./img/event4.png" alt="#">
+                    </div>
+                </li>
+                <li class='event_content'>
+                    <div>
+                    <img src="./img/event2.png" alt="#">
+                    <img src="./img/event2.png" alt="#"> 
+                    <img src="./img/event2.png" alt="#"> 
                     <img src="./img/event4.png" alt="#">
                     </div>
                 </li>
@@ -292,10 +304,11 @@ class Home {
         `;
 
        
-        firstScreen.append(title, event)
+        firstScreen.append(title, this.event)
         homeContainer.append(firstScreen, kitchen, info, rider);
         this.element.append(homeContainer);
-        
+
+        eventWindow(this.event);
     }
     
     

@@ -157,6 +157,7 @@ class Gallery {
 
     async popup(){
         const elems = this.content.children;
+        
         if(!elems) return;
         
         const show = content => {

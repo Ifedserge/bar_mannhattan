@@ -70,8 +70,6 @@ class Header{
         const closeBurger = e =>{
             let elem = e.target;
             let tagName = elem.tagName;
-            console.log(e);
-            console.log(tagName);
             if(tagName === 'A') {
                 body.classList.remove('_lock')
                 menu.classList.remove('_active')
@@ -109,7 +107,6 @@ class Header{
         }
         const bookingWindow = e => {
             let elem = e.target;
-            console.log(elem);
             
             let content = document.createElement('div');
             content.classList.add('content');

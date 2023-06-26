@@ -1,9 +1,11 @@
 import { eventWindow } from '../components/event.js'
+import { kitchenSlider } from '../components/kitchenSlider.js'
 class Home {
     constructor(){
         this.element = null;
         this.init = this.init.bind(this);
         this.event = null;
+        this.kitchen = null;
     }
     async create(){
         this.element = document.createElement('div');
@@ -54,16 +56,17 @@ class Home {
         firstScreen.classList.add('first_screen');
         
 
-        const kitchen = document.createElement('div');
-        kitchen.classList.add('kitchen');
-        kitchen.innerHTML = `
+        this.kitchen = document.createElement('div');
+        this.kitchen.classList.add('kitchen');
+        this.kitchen.innerHTML = `
             <div class='kitchen__heading heading'>
                 <div><p>Top “Manhattan” menu</p></div>
                 <h3>Кухня</h3>
             </div>
             <div class='kitchen__menu'>
-                <button><img src='./img/left.png' alt='#'></button>
+                <button class='left'>&#5176;</button>
                 <div class='menu'>
+                    <div class='menu__container active'>
                      <div class='menu_block'>
                         <img src='./img/home_menu/menu1.png' alt='#'>
                         <div class='menu_block_content'>
@@ -148,9 +151,96 @@ class Home {
                             <p>Integer dolor et sed tempus non. Adipiscing viverra in viverra quisque pretium. Commodo.</p>
                         </div>
                      </div>
+                     </div>
+                     <div class="menu__container">
+                     <div class="menu_block">
+                        <img src="./img/home_menu/menu1.png" alt="#">
+                        <div class="menu_block_content">
+                            <div class="content_title">
+                                <h5>Amet donec</h5>
+                                <p>550 ₽</p>
+                            </div>
+                            <span>200 гр</span>
+                            <p>Placerat id auctor nunc id vel vel curabitur. Urna fames maecenas leo elit diam nibh elit.</p>
+                        </div>
+                     </div>
+                     <div class="menu_block">
+                        <img src="./img/home_menu/menu2.png" alt="#">
+                        <div class="menu_block_content">
+                            <div class="content_title">
+                                <h5>Amet donec</h5>
+                                <p>550 ₽</p>
+                            </div>
+                            <span>500 гр</span>
+                            <p>Elit imperdiet faucibus euismod tortor risus volutpat molestie morbi sed. Porta ac eu.</p>
+                        </div>
+                     </div>
+                     <div class="menu_block">
+                        <img src="./img/home_menu/menu1.png" alt="#">
+                        <div class="menu_block_content">
+                            <div class="content_title">
+                                <h5>Amet donec</h5>
+                                <p>550 ₽</p>
+                            </div>
+                            <span>400 гр</span>
+                            <p>Pharetra morbi purus hendrerit risus vel consequat nunc, sed. Pharetra nulla imperdiet. </p>
+                        </div>
+                     </div>
+                     <div class="menu_block">
+                        <img src="./img/home_menu/menu1.png" alt="#">
+                        <div class="menu_block_content">
+                            <div class="content_title">
+                                <h5>Amet donec</h5>
+                                <p>550 ₽</p>
+                            </div>
+                            <span>200 гр</span>
+                            <p>Leo in arcu in gravida vivamus scelerisque non. Euismod nec amet amet egestas nisl iaculis.</p>
+                        </div>
+                     </div><div class="menu_block">
+                     <img src="./img/home_menu/menu1.png" alt="#">
+                     <div class="menu_block_content">
+                         <div class="content_title">
+                             <h5>Amet donec</h5>
+                             <p>550 ₽</p>
+                         </div>
+                         <span>300 гр</span>
+                         <p>In mauris, elit nisl sed. Nulla accumsan vestibulum sed velit sagittis quis accumsan.</p>
+                     </div>
+                  </div><div class="menu_block">
+                  <img src="./img/home_menu/menu1.png" alt="#">
+                  <div class="menu_block_content">
+                      <div class="content_title">
+                          <h5>Amet donec</h5>
+                          <p>550 ₽</p>
+                      </div>
+                      <span>500 гр</span>
+                      <p>Duis quisque tristique nulla cursus justo, etiam viverra nulla cras. Consectetur eget augue.</p>
+                  </div>
+               </div><div class="menu_block">
+               <img src="./img/home_menu/menu1.png" alt="#">
+               <div class="menu_block_content">
+                   <div class="content_title">
+                       <h5>Amet donec</h5>
+                       <p>550 ₽</p>
+                   </div>
+                   <span>100 гр</span>
+                   <p>In cras pharetra aliquet laoreet. Lectus nisi ante felis quam pharetra in maecenas ut felis.</p>
+               </div>
+            </div><div class="menu_block">
+                        <img src="./img/home_menu/menu1.png" alt="#">
+                        <div class="menu_block_content">
+                            <div class="content_title">
+                                <h5>Amet donec</h5>
+                                <p>550 ₽</p>
+                            </div>
+                            <span>300 гр</span>
+                            <p>Integer dolor et sed tempus non. Adipiscing viverra in viverra quisque pretium. Commodo.</p>
+                        </div>
+                     </div>
+                     </div>
                 </div>
                 
-                <button><img src='./img/right.png' alt='#'></button>
+                <button class='right'>&#5171;</button>
             </div>
             <button class='kitchen__button'><a href="#menu">все меню</a></button>
         `;
@@ -305,10 +395,11 @@ class Home {
 
        
         firstScreen.append(title, this.event)
-        homeContainer.append(firstScreen, kitchen, info, rider);
+        homeContainer.append(firstScreen, this.kitchen, info, rider);
         this.element.append(homeContainer);
 
         eventWindow(this.event);
+        kitchenSlider(this.kitchen);
     }
     
     

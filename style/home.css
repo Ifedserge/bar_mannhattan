@@ -151,15 +151,44 @@
     height: 60px;
     background: #D5621D;
     border-radius: 5px;
-    
+    color: #FFFFFF;
+    font-size: 25px;
+    box-sizing: border-box;
+    border: none;
+    margin: 5px;
+}
+.kitchen__menu button:active{
+    opacity: .2;
 }
 .menu{
+    max-width: 1076px;
+    min-height: 612px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin: 0 15px;
+}
+.menu__container.active{
+
     max-width: 1076px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+    transition: all .3s ease;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.menu__container{
+    position: absolute;
+    left: -1000px;
+    top: 0;
+
+    /* right: 900px; */
+    /* display: none; */
 }
 .menu_block{
     padding-bottom: 45px;
@@ -496,13 +525,48 @@
         padding: 10px;
     }
 }
-
+@media (max-width: 1190px){
+    .menu{
+        min-height: 750px;
+    }
+    .menu_block{
+        max-width: 400px;
+    }
+    .menu__container.active{
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 1000px){
+    .menu{
+        min-height: 612px;
+    }
+    .menu_block{
+        max-width: 486px;
+    }
+    .menu__container.active{
+        flex-direction: column;
+        align-content: center;
+    }
+}
 @media (max-width: 900px){
     .home__container_event .evnet_contents div{
         justify-content: space-evenly;
     }
 }
-
+@media (max-width: 670px){
+    .menu{
+        min-height: 750px;
+    }
+    .menu__container.active{
+        height: 100%;
+    }
+   .menu__container.active .menu_block:nth-child(5),
+   .menu__container.active .menu_block:nth-child(6),
+   .menu__container.active .menu_block:nth-child(7),
+   .menu__container.active .menu_block:nth-child(8){
+    display: none;
+   }
+}
 @media (max-width: 600px){
     .home__container_title{
         height: 300px;
@@ -520,7 +584,28 @@
         padding: 5px;
     }
 }
-
+@media (max-width: 520px){
+    .menu{
+        overflow: scroll;
+    }
+    .menu::-webkit-scrollbar {
+        width: 0;
+      }
+    .menu__container.active{
+        flex-wrap: nowrap;
+    }
+    .menu_block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu_block img{
+        width: 200px;
+    }
+    .menu_block_content{
+        padding-top: 20px;
+        margin: 0 auto;
+    }
+}
 @media (max-width: 430px){
     .home__container_title{
         height: 240px;

@@ -347,7 +347,7 @@
 }
 
 .rider__block{
-    margin-top: 80px;
+    margin-top: 80px;   
     padding-bottom: 150px;
     max-width: 1078px;
     width: 100%;
@@ -357,6 +357,7 @@
 .rider__block-drop{
     max-width: 526px;
     width: 100%;
+    padding: 0 10px;
 }
 .rider__block-drop li{
     /* display: flex;
@@ -445,6 +446,7 @@
 .rider__block-sound{
     max-width: 415px;
     width: 100%;
+    padding: 0 10px;
 }
 .rider__block-sound h3{
     font-family: 'Gotham Pro';
@@ -487,7 +489,9 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
+
 .sound-prod div a{
     display: block;
     width: 40px;
@@ -497,6 +501,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.sound-prod div a:hover{
+    background: #D5621D;
 }
 
 @media (max-width: 1280px){
@@ -524,6 +531,16 @@
     .home__container_event .evnet_contents div img{
         padding: 10px;
     }
+    .info_block{
+        margin: 10px;
+    }
+    .info_img{
+        
+        /* padding: 10px; */
+        display: flex;
+
+        justify-content: center;
+    }
 }
 @media (max-width: 1190px){
     .menu{
@@ -547,10 +564,23 @@
         flex-direction: column;
         align-content: center;
     }
+    .info{
+        padding-top: 75px;
+    }
+    .info_img img{
+        display: none;
+    }
 }
 @media (max-width: 900px){
     .home__container_event .evnet_contents div{
         justify-content: space-evenly;
+    }
+    .rider__block{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .rider__block-sound{
+        padding-bottom: 50px;
     }
 }
 @media (max-width: 670px){
@@ -565,6 +595,13 @@
    .menu__container.active .menu_block:nth-child(7),
    .menu__container.active .menu_block:nth-child(8){
     display: none;
+   }
+   .info{
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+   .info_block:first-child{
+    margin-bottom: 50px;
    }
 }
 @media (max-width: 600px){
@@ -615,12 +652,41 @@
     }
     .heading p{
         font-size: 10px;
-        padding: 5px;
+        /* padding: 5px; */
     }
     .home__container_title h1{
         font-size: 20px;
     }
     .home__container_event .evnet_contents div img{
         padding: 10px;
+    }
+    .sound-prods{
+        flex-direction: column;
+    }
+    
+    .sound-prod:first-child{
+        padding-bottom: 30px;
+    }
+    .sound-prod div{
+        margin-top: 10px;
+    }
+    .rider__block-drop{
+        max-width: 90%;
+    }
+    .drop__content{
+        width: 100%;
+    }
+    
+}
+@media (max-width: 380px){
+    .rider__block-drop li label{
+        padding: 20px;
+    }
+    .drop__content li{
+        margin: 0 auto;
+        width: 90%;
+        padding-left: 20px;
+        font-size: 12px;
+        white-space: pre-line;
     }
 }

@@ -165,7 +165,8 @@ class Gallery {
             let popUpModal = document.createElement('div');
             let popUpClose = document.createElement('div');
             let popUpContent = document.createElement('div');
-
+            let block =document.createElement('div');
+            
             let btnLeft = document.createElement('button');
             let btnRight = document.createElement('button');
             btnLeft.classList.add('btn__left');
@@ -207,7 +208,8 @@ class Gallery {
             popUpContent.classList.add('popup__content');
     
             popUpClose.innerHTML = `&#215`;
-            popUpContent.append(btnLeft, content, btnRight);
+            block.append(content)
+            popUpContent.append(btnLeft, block, btnRight);
     
             popUpClose.addEventListener('click', () => popUpContainer.remove());
     

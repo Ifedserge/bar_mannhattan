@@ -95,3 +95,8 @@
     transition: .4s ;
     opacity: 1;
 }
+@media (max-width: 1320px){
+    .afisha__container__content ul {
+        justify-content: space-evenly;
+    }
+}

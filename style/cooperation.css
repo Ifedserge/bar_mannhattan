@@ -87,3 +87,13 @@
     
     
 }
+
+@media (max-width: 700px){
+    .cooperation__container__content .cooperation__container__content-block{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cooperation__container__content-block div:first-child{
+        margin-bottom: 50px;
+    }
+}

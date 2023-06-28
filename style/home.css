@@ -263,6 +263,11 @@
     margin-top: 30px;
     background: #D5621D;
     border-radius: 5px;
+    border: none;
+}
+.kitchen__button:hover{
+    background: none;
+    border: 2px solid #D5621D;
 }
 .kitchen__button a{
     padding: 15px 30px;
@@ -277,6 +282,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
     text-decoration: none;
+    
 }
 
 .info{

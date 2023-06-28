@@ -29,7 +29,7 @@ class Gallery {
                     <img class='photo' src='./img/gallery/9.png' alt='#' >
                 </a>
                 <div>
-                    <a href='./img/gallery/9.png' data-type='img'>    
+                    <a href='./img/gallery/9.png' data-type='imgPlus'>    
                         <img src='./img/gallery/more.png' alt='#'>
                     </a>        
                 </div>
@@ -39,7 +39,7 @@ class Gallery {
                     <img class='photo' src='./img/gallery/1.png' alt='#' >
                 </a>
                 <div>
-                    <a href='./img/gallery/full/1.jpg' data-type='img' >
+                    <a href='./img/gallery/full/1.jpg' data-type='imgPlus' >
                         <img src='./img/gallery/more.png' alt='#'>
                     </a>        
                 </div>
@@ -49,7 +49,7 @@ class Gallery {
                     <img class='photo' src='./img/gallery/2.png' alt='#'>
                 </a>
                 <div>
-                    <a href='./img/gallery/full/2.jpg' data-type='img'>
+                    <a href='./img/gallery/full/2.jpg' data-type='imgPlus'>
                         <img src='./img/gallery/more.png' alt='#'>
                     </a>    
                 </div>
@@ -59,7 +59,7 @@ class Gallery {
                     <img class='photo' src='./img/gallery/3.png' alt='#' >
                 </a>
                 <div>
-                    <a href='./img/gallery/full/3.jpg' data-type='img'>
+                    <a href='./img/gallery/full/3.jpg' data-type='imgPlus'>
                         <img src='./img/gallery/more.png' alt='#'>
                     </a>
                 </div>
@@ -69,7 +69,7 @@ class Gallery {
                     <img class='photo' src='./img/gallery/4.png' alt='#' >
                 </a>
                 <div>
-                    <a href='./img/gallery/full/4.jpg' data-type='img'>
+                    <a href='./img/gallery/full/4.jpg' data-type='imgPlus'>
                         <img src='./img/gallery/more.png' alt='#'>
                     </a>    
                     </div>
@@ -80,7 +80,7 @@ class Gallery {
                     <img class='photo' src='./img/gallery/5.png' alt='#' >
                 </a>
                 <div>
-                <a href='./img/gallery/full/5.jpg' data-type='img'>
+                <a href='./img/gallery/full/5.jpg' data-type='imgPlus'>
                         <img src='./img/gallery/more.png' alt='#'>
                     </a>
                     </div>
@@ -90,7 +90,7 @@ class Gallery {
                     <img class='photo' src='./img/gallery/6.png' alt='#' >
                 </a>
                 <div>
-                    <a href='./img/gallery/full/6.jpg' data-type='img'>
+                    <a href='./img/gallery/full/6.jpg' data-type='imgPlus'>
                         <img src='./img/gallery/more.png' alt='#'>
                     </a>    
                     </div>
@@ -100,7 +100,7 @@ class Gallery {
                     <img class='photo' src='./img/gallery/7.png' alt='#' >
                 </a>
                 <div>
-                    <a href='./img/gallery/full/7.jpg' data-type='img'>
+                    <a href='./img/gallery/full/7.jpg' data-type='imgPlus'>
                         <img src='./img/gallery/more.png' alt='#'>
                     </a>    
                 </div>
@@ -111,7 +111,7 @@ class Gallery {
                     <img class='photo' src='./img/gallery/8.png' alt='#' >
                 </a>
                 <div>
-                    <a href='./img/gallery/full/8.jpg' data-type='img'>
+                    <a href='./img/gallery/full/8.jpg' data-type='imgPlus'>
                         <img src='./img/gallery/more.png' alt='#'>
                     </a>   
                 </div>
@@ -121,7 +121,7 @@ class Gallery {
                     <img class='photo' src='./img/gallery/9.png' alt='#' >
                 </a>
                 <div>
-                    <a href='./img/gallery/full/9.jpg' data-type='img'>
+                    <a href='./img/gallery/full/9.jpg' data-type='imgPlus'>
                     <img src='./img/gallery/more.png' alt='#'>
                     </a>
                 </div>
@@ -131,7 +131,7 @@ class Gallery {
                     <img class='photo' src='./img/gallery/11.png' alt='#' >
                 </a>
                 <div>
-                    <a href='./img/gallery/full/11.jpg' data-type='img'>
+                    <a href='./img/gallery/full/11.jpg' data-type='imgPlus'>
                         <img src='./img/gallery/more.png' alt='#'>
                     </a>
                 </div>
@@ -141,7 +141,7 @@ class Gallery {
                     <img class='photo' src='./img/gallery/12.png' alt='#' >
                 </a>
                 <div>
-                    <a href='./img/gallery/full/12.jpg' data-type='img'>
+                    <a href='./img/gallery/full/12.jpg' data-type='imgPlus'>
                         <img src='./img/gallery/more.png' alt='#'>
                     </a>
                 </div>
@@ -157,9 +157,7 @@ class Gallery {
 
     async popup(){
         const elems = this.content.children;
-        
         if(!elems) return;
-        
         const show = content => {
             let popUpContainer = document.createElement('div');
             let popUpModal = document.createElement('div');
@@ -235,7 +233,6 @@ class Gallery {
                 let parent = elem.closest('[data-type]');
                 if(!parent) return;
                 type = parent.dataset.type;
-                console.log(type);
                 if(!type) return;
                 elem = parent;
             }
@@ -245,17 +242,25 @@ class Gallery {
             if(type === 'img') {
                 const href = elem.href;
                 if(!href) return;
-
                 const id = elem.id;
-               
-
                 let img = document.createElement('img');
                 let src = imgArray[id].href
                 img.setAttribute('src', src);
                 img.setAttribute('id', id);
                 content = img;
             }
-            // console.log(elem);
+            if(type === 'imgPlus'){
+                let perantElem = elem.parentNode.parentNode;
+                let parentElemChildren = perantElem.children[0];               
+                const href = parentElemChildren.href;
+                if(!href) return;
+                const id = parentElemChildren.id;
+                let img = document.createElement('img');
+                let src = imgArray[id].href;
+                img.setAttribute('src', src);
+                img.setAttribute('id', id);
+                content = img;
+            }
             show(content);
          }
         let imgArray = [];

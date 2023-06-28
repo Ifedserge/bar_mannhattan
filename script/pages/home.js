@@ -397,7 +397,6 @@ class Home {
         firstScreen.append(title, this.event)
         homeContainer.append(firstScreen, this.kitchen, info, rider);
         this.element.append(homeContainer);
-
         eventWindow(this.event);
         kitchenSlider(this.kitchen);
     }
@@ -406,7 +405,6 @@ class Home {
     init(){
         this.create();
         return this.element;
-        
     }
 }
 
